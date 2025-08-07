@@ -1,0 +1,60 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --sidebar-bg: #f0f0f0;
+    --header-footer-bg: #4CAF50;
+  }
+  
+  body.dark {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --sidebar-bg: #2c2c2c;
+    --header-footer-bg: #222;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+  }
+  
+  header, footer {
+    background-color: var(--header-footer-bg);
+    padding: 10px;
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+  }
+  
+  nav {
+    background-color: var(--sidebar-bg);
+    padding: 15px;
+    height: 100%;
+  }
+  
+  nav a {
+    display: block;
+    margin-bottom: 10px;
+    color: blue;
+    text-decoration: underline;
+  }
+  
+  section {
+    padding: 20px;
+  }
+  
+  .switch {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }

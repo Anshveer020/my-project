@@ -1,0 +1,11 @@
+This project is a simple admin dashboard built using HTML, CSS, and JavaScript. The main objective was to
+ create a clean, responsive layout using CSS Grid and implement a light/dark theme toggle feature. The HTML
+  structure is divided into four key sections: a header that includes the dashboard title and a dark mode switch, 
+  a sidebar navigation with links like Home, Users, and Settings, a main content area displaying a welcome message,
+   and a footer showing copyright information. The layout uses CSS Grid to organize these sections effectively—three
+    rows for the header, main content, and footer, and two columns inside the main content area for the sidebar and 
+    main section. The styling is handled in a separate CSS file using CSS variables, which makes it easy to switch between 
+    light and dark themes. By default, the page loads in light mode, and when the checkbox is toggled, JavaScript adds 
+    or removes the “dark” class on the <body>, changing the color scheme dynamically without reloading the page. 
+    Overall, the project demonstrates the use of semantic HTML tags, modern CSS layout techniques, theme customization
+     using variables, and basic JavaScript for interactivity.
