@@ -1,15 +1,19 @@
 :root {
-    --bg-color: #ffffff;
-    --text-color: #000000;
+    --bg-color: white;
+    --text-color: black;
+    --header-bg: #4CAF50;
     --sidebar-bg: #f0f0f0;
-    --header-footer-bg: #4CAF50;
+    --footer-bg: #4CAF50;
+    --footer-text: white;
   }
   
-  body.dark {
-    --bg-color: #121212;
-    --text-color: #ffffff;
-    --sidebar-bg: #2c2c2c;
-    --header-footer-bg: #222;
+  #theme-toggle:checked ~ .dashboard {
+    --bg-color: #111;
+    --text-color: #f0f0f0;
+    --header-bg: #222;
+    --sidebar-bg: #333;
+    --footer-bg: #111;
+    --footer-text: #ccc;
   }
   
   body {
@@ -17,44 +21,64 @@
     font-family: Arial, sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    height: 100vh;
   }
   
-  header, footer {
-    background-color: var(--header-footer-bg);
-    padding: 10px;
-    color: var(--text-color);
+  .dashboard {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "sidebar main"
+      "footer footer";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+  }
+  
+  .header {
+    grid-area: header;
+    background-color: var(--header-bg);
+    color: white;
+    padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 1.2rem;
   }
   
-  main {
-    display: grid;
-    grid-template-columns: 200px 1fr;
+  .toggle-label {
+    cursor: pointer;
+    font-size: 0.9rem;
   }
   
-  nav {
+  .sidebar {
+    grid-area: sidebar;
     background-color: var(--sidebar-bg);
-    padding: 15px;
-    height: 100%;
+    padding: 1rem;
   }
   
-  nav a {
-    display: block;
-    margin-bottom: 10px;
-    color: blue;
+  .sidebar ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    color: purple;
+  }
+  
+  .sidebar a:hover {
     text-decoration: underline;
   }
   
-  section {
-    padding: 20px;
+  .main-content {
+    grid-area: main;
+    padding: 2rem;
   }
   
-  .switch {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+  .footer {
+    grid-area: footer;
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    text-align: center;
+    padding: 1rem;
   }
