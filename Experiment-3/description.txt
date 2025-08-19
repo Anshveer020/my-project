@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 ADMIN DASHBOARD – TEST CASES & VALIDATIONS
 
 ⸻
+=======
+Admin Dashboard
+>>>>>>> bc5f123 (Added Experiment-4 with description, HTML, CSS, and JS files)
 
 1. HEADER: Dashboard Title and Theme Switch
 
@@ -183,4 +187,8 @@ LEARNING OUTCOMES
 	2.	Understood how to implement theme switching using a hidden checkbox and CSS-only logic — no JavaScript.
 	3.	Practiced using CSS variables (--bg-color, --text-color, etc.) to control dynamic themes.
 	4.	Gained experience in writing validation-based test cases for layout, accessibility, and design responsiveness.
+<<<<<<< HEAD
 	5.	Developed clean and scalable CSS structure suitable for real-world admin dashboards.
+=======
+	5.	Developed clean and scalable CSS structure suitable for real-world admin dashboards.
+>>>>>>> bc5f123 (Added Experiment-4 with description, HTML, CSS, and JS files)
